@@ -10,6 +10,7 @@ public class B1_2557 {
     }
 }
 
+
 /* -------------------- 방법 2 -------------------- */
 /* ★★★★★★★★★★
 BufferedReader & BufferedWriter Hello World!
@@ -31,6 +32,7 @@ public class Way1_Buffered_WR {
 	}
 } */
 
+
 /* -------------------- 방법 3 -------------------- */
 
 /* StringBuilder
@@ -46,6 +48,7 @@ BufferedWriter와 유사하게 데이터를 모아두었다가 한 번에 출력
 		System.out.println(sb);
 	}
 } */
+
 
 /* -------------------- 방법 4 -------------------- */
 
