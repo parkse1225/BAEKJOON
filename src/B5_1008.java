@@ -8,8 +8,8 @@ public class B5_1008 {
 		Scanner in=new Scanner(System.in);
 		
         // 문제에 나와있듯이 오차 범위를 벗어나지 않게 하기 위해서는 반드시 double형(실수형)으로 출력을 해주어야 한다.
-		double a=in.nextDouble();
-		double b=in.nextDouble();
+		double a = in.nextDouble();
+		double b = in.nextDouble();
 
 		System.out.print(a/b);
 
