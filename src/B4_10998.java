@@ -1,7 +1,8 @@
+/* -------------------- 방법 1 -------------------- */
+
 import java.util.Scanner;
- 
+
 public class B4_10998 {
- 
 	public static void main(String[] args) {
  
 		Scanner in = new Scanner(System.in);
@@ -25,7 +26,6 @@ import java.io.IOException;
 import java.util.StringTokenizer;
  
 public class Main {
- 
 	public static void main(String[] args) throws IOException {
         
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -60,7 +60,6 @@ import java.io.InputStreamReader;
 import java.io.IOException;
  
 public class Main {
- 
 	public static void main(String[] args) throws IOException {
 		     
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

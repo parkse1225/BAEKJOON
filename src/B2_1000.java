@@ -1,3 +1,5 @@
+/* -------------------- 방법 1 -------------------- */
+
 import java.util.Scanner; // Scanner 클래스를 import 한다.
 
 public class B2_1000 {
@@ -22,7 +24,6 @@ import java.io.IOException;
 import java.util.StringTokenizer; // 단순 규칙으로 문자열을 분리해줄 때 필자는 StringTokenizer을 애용한다.
 
 public class Main {
- 
 	public static void main(String[] args) throws IOException {
         
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -68,9 +69,8 @@ readLine()은 한 행을 전부 읽기 때문에 공백단위로 입력해 준 �
 /* import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
- 
+
 public class Main {
- 
 	public static void main(String[] args) throws IOException {
 		     
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

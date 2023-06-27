@@ -2,22 +2,25 @@
 
 import java.util.Scanner;
 
-public class B3_1001 {
+public class B5_1008 {
 	public static void main(String[] args) {
  
-        Scanner in = new Scanner(System.in);
-		int A = in.nextInt();
-		int B = in.nextInt();
+		Scanner in=new Scanner(System.in);
 		
-		System.out.println(A-B);
- 
-		in.close();
+        // 문제에 나와있듯이 오차 범위를 벗어나지 않게 하기 위해서는 반드시 double형(실수형)으로 출력을 해주어야 한다.
+		double a=in.nextDouble();
+		double b=in.nextDouble();
+
+		System.out.print(a/b);
+
+        in.close();
 	}
 }
 
+
 /* -------------------- 방법 2-1 -------------------- */
 
-/* BufferedReader을 쓰는 방식이다. */
+/* BufferedReader 을 쓰는 방식이다. */
 
 /* import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -31,10 +34,10 @@ public class Main {
  
  		String str = br.readLine();
 		StringTokenizer st = new StringTokenizer(str," ");
-		int a = Integer.parseInt(st.nextToken());
-		int b = Integer.parseInt(st.nextToken());
+		double a = Double.parseDouble(st.nextToken());
+		double b = Double.parseDouble(st.nextToken());
 		
-		System.out.println(a-b);
+		System.out.println(a/b);
 	}
 } */
 
@@ -43,30 +46,31 @@ public class Main {
  
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
-		int a = Integer.parseInt(st.nextToken());
-		int b = Integer.parseInt(st.nextToken());
+		double a = Double.parseDouble(st.nextToken());
+		double b = Double.parseDouble(st.nextToken());
 		
-		System.out.println(a-b);
+		System.out.println(a/b);
 */
 
 
 /* -------------------- 방법 2-2 -------------------- */
 
-/* br.readLine() 을 통해 읽어온 것을 split(" ") 하여 공백 단위로 나눠준 뒤 String 배열에 각각 저장하는 방법이다. */
+/* br.readLine() 을 통해 읽어온 것을 split(" ") 하여 공백 단위로 나눠준 뒤 String 배열에 각각 저장하는 방법이다.
+그렇게 저장된 배열 원소를 하나씩 꺼내 double형으로 변환해주어야 한다. */
 
 /* import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
- 
+
 public class Main {
 	public static void main(String[] args) throws IOException {
 		     
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		String[] str = br.readLine().split(" ");
-		int a = Integer.parseInt(str[0]);
-		int b = Integer.parseInt(str[1]);
+		double a = Double.parseDouble(str[0]);
+		double b = Double.parseDouble(str[1]);
 		
-		System.out.println(a-b);
+		System.out.println(a/b);
 	}
 } */
