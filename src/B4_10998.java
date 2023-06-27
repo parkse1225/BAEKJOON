@@ -1,18 +1,19 @@
 import java.util.Scanner;
  
-public class B3_1001 {
+public class B4_10998 {
  
 	public static void main(String[] args) {
  
-        Scanner in = new Scanner(System.in);
+		Scanner in = new Scanner(System.in);
 		int A = in.nextInt();
 		int B = in.nextInt();
 		
-		System.out.println(A-B);
+		System.out.println(A*B);
  
 		in.close();
 	}
 }
+
 
 /* -------------------- 방법 2-1 -------------------- */
 
@@ -34,7 +35,7 @@ public class Main {
 		int a = Integer.parseInt(st.nextToken());
 		int b = Integer.parseInt(st.nextToken());
 		
-		System.out.println(a-b);
+		System.out.println(a*b);
 	}
 } */
 
@@ -46,7 +47,7 @@ public class Main {
 		int a = Integer.parseInt(st.nextToken());
 		int b = Integer.parseInt(st.nextToken());
 		
-		System.out.println(a-b);
+		System.out.println(a*b); 
 */
 
 
@@ -68,6 +69,6 @@ public class Main {
 		int a = Integer.parseInt(str[0]);
 		int b = Integer.parseInt(str[1]);
 		
-		System.out.println(a-b);
+		System.out.println(a*b);
 	}
 } */
