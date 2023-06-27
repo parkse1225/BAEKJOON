@@ -15,7 +15,9 @@ public class B3_1001 {
 }
 
 // ---------------------방법 2-1 --------------------- //
- 
+
+/* BufferedReader을 쓰는 방식이다. */
+
 /* import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
@@ -44,6 +46,28 @@ public class Main {
 		int a = Integer.parseInt(st.nextToken());
 		int b = Integer.parseInt(st.nextToken());
 		
-		System.out.println(a-b); 
-        
+		System.out.println(a-b);
 */
+
+
+// ---------------------방법 2-2 --------------------- //
+
+/* br.readLine() 을 통해 읽어온 것을 split(" ") 하여 공백 단위로 나눠준 뒤 String 배열에 각각 저장하는 방법이다. */
+
+/* import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+ 
+public class Main {
+ 
+	public static void main(String[] args) throws IOException {
+		     
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		String[] str = br.readLine().split(" ");
+		int a = Integer.parseInt(str[0]);
+		int b = Integer.parseInt(str[1]);
+		
+		System.out.println(a-b);
+	}
+} */
