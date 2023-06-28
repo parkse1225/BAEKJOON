@@ -18,7 +18,8 @@ public class B1_2557 {
 쉽게 비유해서 설명하면  BufferedWriter / BufferedReader는 Buffer에 있는 IO 클래스인데 이 클래스들은 데이터를 하나씩 읽어오는 것이 아니라 임시 공간(버퍼)에 저장해두었다가 한 번에 출력 또는 데이터를 보내는 방식이다.
 즉, 예를 들어 1000개의 데이터를 1개씩 보내는게 아니라 임시로 한 공간에 담아둔 뒤 한 번에 보내는 방법이니 당연 성능면에서 우수하다. */
 
-/* import java.io.BufferedWriter;
+/*
+import java.io.BufferedWriter;
 import java.io.OutputStreamWriter;
 import java.io.IOException;
 
@@ -30,7 +31,8 @@ public class Way1_Buffered_WR {
 		bw.flush(); // 버퍼에 남아있는 데이터를 강제로 출력합니다.
 		bw.close(); // 버퍼를 닫고 관련된 시스템 리소스를 해제합니다.
 	}
-} */
+}
+*/
 
 
 /* -------------------- 방법 3 -------------------- */
@@ -39,7 +41,8 @@ public class Way1_Buffered_WR {
 BufferedWriter와 유사하게 데이터를 모아두었다가 한 번에 출력한다. 특히나 문자열을 조작할 때 매우 유용하다.
 특징이 있다면 StringBuilder에서 문자열을 이어 붙인다는 점이다. */
 
-/* public class Main {
+/*
+public class Main {
 	public static void main(String[] args){
  
 		StringBuilder sb = new StringBuilder();
@@ -47,7 +50,8 @@ BufferedWriter와 유사하게 데이터를 모아두었다가 한 번에 출력
 		
 		System.out.println(sb);
 	}
-} */
+}
+*/
 
 
 /* -------------------- 방법 4 -------------------- */
@@ -56,7 +60,8 @@ BufferedWriter와 유사하게 데이터를 모아두었다가 한 번에 출력
 즉, multi-thread 상황에서 문자열이 리소스로 사용된다면 StringBuffer을 사용해주어야 한다. (StringBuilder은 동기화를 지원하지 않는다.)
 아무래도 동기화를 지원하다 보니 StringBuilder 보단 느리지만 그래도 문자열 조작에 있어 String 보다 훨씬 빠르다. */
 
-/* public class Main {
+/*
+public class Main {
 	public static void main(String[] args){
  
 		StringBuffer sb = new StringBuffer();
@@ -64,7 +69,8 @@ BufferedWriter와 유사하게 데이터를 모아두었다가 한 번에 출력
 		
 		System.out.println(sb);
 	}
-} */
+}
+*/
 
 /* 대략 속도가 빠른순으로 비교해보자면
 BufferedWriter >> StringBuilder > StringBuffer >>>> String */

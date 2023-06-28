@@ -29,7 +29,8 @@ public class B7_10926 {
 
 /* BufferedReader & StringTokenizer */
 
-/* import java.io.BufferedReader;
+/*
+import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
@@ -43,4 +44,5 @@ public class Main {
 		String s = br.readLine();
 		System.out.println(s + lastString);
 	}
-} */
+}
+*/

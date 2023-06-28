@@ -34,7 +34,8 @@ readLine()은 한 행을 전부 읽기 때문에 공백단위로 입력해 준 �
 
 결론부터 말하자면 StringTokenizer가 성능면에서 좋다. 그래서 단순 규칙으로 문자열을 분리해줄 때 StringTokenizer을 애용한다. */
 
-/* import java.io.BufferedReader;
+/*
+import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.StringTokenizer; // 단순 규칙으로 문자열을 분리해줄 때 필자는 StringTokenizer을 애용한다.
@@ -52,7 +53,8 @@ public class Main {
 		
 		System.out.println(a+b);
 	}
-} */
+}
+*/
 
 /* 굳이 String 변수 생성 안하고 입력과 동시에 구분자로 분리해줘도 된다.
  
@@ -61,7 +63,8 @@ public class Main {
 		int a = Integer.parseInt(st.nextToken());
 		int b = Integer.parseInt(st.nextToken());
 		
-		System.out.println(a+b); */
+		System.out.println(a+b); 
+*/
 
 
 /* -------------------- 방법 2-2 -------------------- */
@@ -71,7 +74,8 @@ public class Main {
 /* 두 번째 방법은 br.readLine() 을 통해 읽어온 것을 split(" ") 하여 공백 단위로 나눠준 뒤 String 배열에 각각 저장하는 방법이다.
 쓰기에는 이 방법이 더 간단하고 보기 편하지만 나중에 문자열을 다루게 되고 데이터 양이 많아지게 되면 StringTokenizer 보다 성능이 낮아 수행시간 차이가 발생하게 된다. */
 
-/* import java.io.BufferedReader;
+/*
+import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
@@ -86,4 +90,5 @@ public class Main {
 		
 		System.out.println(a+b);
 	}
-} */
+}
+*/

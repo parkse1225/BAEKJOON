@@ -22,7 +22,8 @@ public class B4_10998 {
 
 /* BufferedReader & StringTokenizer */
 
-/* import java.io.BufferedReader;
+/*
+import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.StringTokenizer;
@@ -39,7 +40,8 @@ public class Main {
 		
 		System.out.println(a*b);
 	}
-} */
+}
+*/
 
 /*    
 굳이 String 변수 생성 안하고 입력과 동시에 구분자로 분리해줘도 된다.
@@ -58,7 +60,8 @@ public class Main {
 /* BufferedReader & split()
 br.readLine() 을 통해 읽어온 것을 split(" ") 하여 공백 단위로 나눠준 뒤 String 배열에 각각 저장하는 방법이다. */
 
-/* import java.io.BufferedReader;
+/*
+import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
  
@@ -73,4 +76,5 @@ public class Main {
 		
 		System.out.println(a*b);
 	}
-} */
+}
+*/

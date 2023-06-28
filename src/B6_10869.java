@@ -32,7 +32,8 @@ public class B6_10869 {
 StringBuilder방식으로 변경해보았다.
 StringBuilder을 생성하여 하나의 문자열로 연결 해 준 다음 한번에 출력하는 방법이다. */
 
-/* import java.util.Scanner;
+/*
+import java.util.Scanner;
 
 public class Main { 
 	public static void main(String[] args) {
@@ -59,14 +60,16 @@ public class Main {
 
         in.close();
 	}
-} */
+}
+*/
 
 
 /* -------------------- 방법 1-3 -------------------- */
 
 /* BufferedWriter을 쓰는 방법이다. */
 
-/* import java.util.Scanner;
+/*
+import java.util.Scanner;
 import java.io.BufferedWriter;
 import java.io.OutputStreamWriter;
 import java.io.IOException;
@@ -90,7 +93,8 @@ public class Main {
 
         in.close();
 	}
-} */
+}
+*/
 
 /* 이렇게 버퍼에 문자열을 담아둔 뒤 한번에 출력하는 방법이 있다.
 
@@ -102,7 +106,8 @@ public class Main {
 
 /* BufferedReader & StringTokenizer */
 
-/* import java.io.BufferedReader;
+/*
+import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.StringTokenizer;
@@ -123,7 +128,8 @@ public class Main {
 		System.out.println(A/B);
 		System.out.println(A%B);
 	}
-} */
+}
+*/
 
 /*    
 굳이 String 변수 생성 안하고 입력과 동시에 구분자로 분리해줘도 된다.
@@ -147,7 +153,8 @@ public class Main {
 br.readLine() 을 통해 읽어온 것을 split(" ") 하여 공백 단위로 나눠준 뒤 String 배열에 각각 저장하는 방법이다.
 배열에 저장된 원소들은 String 이기 때문에 반드시 int형으로 변환해줘야 한다. */
 
-/* import java.io.BufferedReader;
+/*
+import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
@@ -166,4 +173,5 @@ public class Main {
 		System.out.println(A/B);
 		System.out.println(A%B);
 	}
-} */
+}
+*/
