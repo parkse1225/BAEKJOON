@@ -7,13 +7,13 @@ import java.util.Scanner; // Scanner 클래스를 import 한다.
 public class B2_1000 {
     public static void main(String[] args){
 
-        Scanner sc = new Scanner(System.in); // sc = 객체명 // 객체를 생성한다.
-        int A = sc.nextInt(); // A 입력 받기
-        int B = sc.nextInt(); // B 입력 받기
+        Scanner in = new Scanner(System.in); // sc = 객체명 // 객체를 생성한다.
+        int A = in.nextInt(); // 정수 A 입력 받기
+        int B = in.nextInt(); // 정수 B 입력 받기
 
         System.out.println(A+B);
 
-        sc.close();
+        in.close();
     }
 }
 
