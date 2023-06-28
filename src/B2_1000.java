@@ -32,24 +32,23 @@ readLine()은 한 행을 전부 읽기 때문에 공백단위로 입력해 준 �
 1. StringTokenizer 클래스를 이용하여 분리해주는 방법
 2. split() 을 이용하는 방법
 
-결론부터 말하자면 StringTokenizer가 성능면에서 좋다. 그래서 단순 규칙으로 문자열을 분리해줄 때 StringTokenizer을 애용한다. */
+※ 결론부터 말하자면 StringTokenizer가 성능면에서 좋다. 그래서 단순 규칙으로 문자열을 분리해줄 때 StringTokenizer을 애용한다. */
 
 /*
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
-import java.util.StringTokenizer; // 단순 규칙으로 문자열을 분리해줄 때 필자는 StringTokenizer을 애용한다.
+import java.util.StringTokenizer;	// 단순 규칙으로 문자열을 분리해줄 때 StringTokenizer을 애용한다.
 
 public class Main {
 	public static void main(String[] args) throws IOException {
         
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
  
-        // readLine() 은 한 행을 읽어오고, read() 는 한 문자만 읽어온다. 그래서 특별한 경우가 없는 한 대부분 readLine() 을 쓴다.
- 		String str = br.readLine();
-		StringTokenizer st = new StringTokenizer(str," "); // 객체 생성 할 때 StringTokenizer( "문자열" , 구분자 ); 을 해주면 된다.
-		int a = Integer.parseInt(st.nextToken()); // 구분된 변수를 꺼낼 때는 차례대로 nextToken(); 을 해주면 문자열을 반환해준다.
-		int b = Integer.parseInt(st.nextToken()); // 이때 반환시킨 문자열은 반환됨과 동시에 해당 객체에서 사라지게 된다. 그리고 문자열을 반환했으니 Integer.parseInt()로 int 형으로 변환시켜준다.
+ 		String str = br.readLine();	// readLine() 은 한 행을 읽어오고, read() 는 한 문자만 읽어온다. 그래서 특별한 경우가 없는 한 대부분 readLine() 을 쓴다.
+		StringTokenizer st = new StringTokenizer(str," ");	// 객체 생성 할 때 StringTokenizer( "문자열" , 구분자 ); 을 해주면 된다.
+		int a = Integer.parseInt(st.nextToken());	// 구분된 변수를 꺼낼 때는 차례대로 nextToken(); 을 해주면 문자열을 반환해준다.
+		int b = Integer.parseInt(st.nextToken());	// 이때 반환시킨 문자열은 반환됨과 동시에 해당 객체에서 사라지게 된다. 그리고 문자열을 반환했으니 Integer.parseInt()로 int형으로 변환시켜준다.
 		
 		System.out.println(a+b);
 	}
