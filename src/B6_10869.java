@@ -4,6 +4,8 @@
 1. 입력은 공백으로 구분하여 주어진다.
 2. 나눗셈 (A/B) 의 결과는 몫만 반환한다. */
 
+// Scanner
+
 import java.util.Scanner;
 
 public class B6_10869 {
@@ -98,7 +100,7 @@ public class Main {
 
 /* -------------------- 방법 2-1 -------------------- */
 
-/* BufferedReader을 쓰는 방식이다. */
+/* BufferedReader & StringTokenizer */
 
 /* import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -141,7 +143,8 @@ public class Main {
 
 /* -------------------- 방법 2-2 -------------------- */
 
-/* br.readLine() 을 통해 읽어온 것을 split(" ") 하여 공백 단위로 나눠준 뒤 String 배열에 각각 저장하는 방법이다.
+/* BufferedReader & split()
+br.readLine() 을 통해 읽어온 것을 split(" ") 하여 공백 단위로 나눠준 뒤 String 배열에 각각 저장하는 방법이다.
 배열에 저장된 원소들은 String 이기 때문에 반드시 int형으로 변환해줘야 한다. */
 
 /* import java.io.BufferedReader;

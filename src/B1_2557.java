@@ -13,7 +13,7 @@ public class B1_2557 {
 
 /* -------------------- 방법 2 -------------------- */
 /* ★★★★★★★★★★
-BufferedReader & BufferedWriter Hello World!
+★★ BufferedReader & BufferedWriter Hello World! ★★
 백준 알고리즘을 해결하는데 있어 많이 사용하게 될 방법 중 하나다.
 쉽게 비유해서 설명하면  BufferedWriter / BufferedReader는 Buffer에 있는 IO 클래스인데 이 클래스들은 데이터를 하나씩 읽어오는 것이 아니라 임시 공간(버퍼)에 저장해두었다가 한 번에 출력 또는 데이터를 보내는 방식이다.
 즉, 예를 들어 1000개의 데이터를 1개씩 보내는게 아니라 임시로 한 공간에 담아둔 뒤 한 번에 보내는 방법이니 당연 성능면에서 우수하다. */
@@ -24,11 +24,11 @@ import java.io.IOException;
 
 public class Way1_Buffered_WR {
     public static void main(String[] args) throws IOException {
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out)); // BufferedWriter 객체 생성
  
-		bw.write("Hello World!");
-		bw.flush();
-		bw.close();
+		bw.write("Hello World!"); // 문자열 "Hello World!"를 버퍼에 작성합니다.
+		bw.flush(); // 버퍼에 남아있는 데이터를 강제로 출력합니다.
+		bw.close(); // 버퍼를 닫고 관련된 시스템 리소스를 해제합니다.
 	}
 } */
 

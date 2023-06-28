@@ -1,5 +1,7 @@
 /* -------------------- 방법 1 -------------------- */
 
+// Scanner
+
 import java.util.Scanner;
 
 public class B5_1008 {
@@ -20,7 +22,7 @@ public class B5_1008 {
 
 /* -------------------- 방법 2-1 -------------------- */
 
-/* BufferedReader 을 쓰는 방식이다. */
+/* BufferedReader & StringTokenizer */
 
 /* import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -55,7 +57,8 @@ public class Main {
 
 /* -------------------- 방법 2-2 -------------------- */
 
-/* br.readLine() 을 통해 읽어온 것을 split(" ") 하여 공백 단위로 나눠준 뒤 String 배열에 각각 저장하는 방법이다.
+/* BufferedReader & split()
+br.readLine() 을 통해 읽어온 것을 split(" ") 하여 공백 단위로 나눠준 뒤 String 배열에 각각 저장하는 방법이다.
 그렇게 저장된 배열 원소를 하나씩 꺼내 double형으로 변환해주어야 한다. */
 
 /* import java.io.BufferedReader;

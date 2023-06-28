@@ -1,5 +1,7 @@
 /* -------------------- 방법 1 -------------------- */
 
+// Scanner
+
 import java.util.Scanner;
 
 public class B4_10998 {
@@ -18,7 +20,7 @@ public class B4_10998 {
 
 /* -------------------- 방법 2-1 -------------------- */
 
-/* BufferedReader을 쓰는 방식이다. */
+/* BufferedReader & StringTokenizer */
 
 /* import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -53,7 +55,8 @@ public class Main {
 
 /* -------------------- 방법 2-2 -------------------- */
 
-/* br.readLine() 을 통해 읽어온 것을 split(" ") 하여 공백 단위로 나눠준 뒤 String 배열에 각각 저장하는 방법이다. */
+/* BufferedReader & split()
+br.readLine() 을 통해 읽어온 것을 split(" ") 하여 공백 단위로 나눠준 뒤 String 배열에 각각 저장하는 방법이다. */
 
 /* import java.io.BufferedReader;
 import java.io.InputStreamReader;
